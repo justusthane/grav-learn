@@ -14,15 +14,17 @@ Using this directory structure as an example, we will take a look at the differe
 
 To get us started, here is a quick look at some of the common components of a Grav link, and what they mean.
 
-```
+```markdown
 [Linked Content](../path/slug/page)
 ```
 
-| String | Description                                                                                                                                                      |
-| :----- | :-----                                                                                                                                                           |
-| `[]`   | The square bracket is used to wrap the text or alternate content that becomes linked. In HTML, this would be the content placed between `<a href="">` and `</a>` |
-| `()`   | The parenthesis is used to surround the link itself. This is placed directly after the square bracket.                                                           |
-| `../`  | When used in the link, it indicates a move up a directory.                                                                                                       |
+[div class="table-keycol"]
+| String | Description |
+| :----- | :----- |
+| `[]`   | The square bracket is used to wrap the text or alternate content that becomes linked. In HTML, this would be the content placed between `<a href="">` and `</a>`. |
+| `()`   | The parenthesis is used to surround the link itself. This is placed directly after the square bracket. |
+| `../`  | When used in the link, it indicates a move up a directory. |
+[/div]
 
 ### Slug Relative
 
@@ -34,7 +36,7 @@ Directory names also have numbers assigned which helps with ordering. You don't 
 
 Here are a few examples of slug-relative links.
 
-In this example, we're moving up a directory and loading the default page located in the `pages/01.blue/02.water/item.md` directory from `pages/01.blue/01.sky/item.md` The file, `item.md`, has no assigned slug, so Grav uses the directory name.
+In this example, we're moving up a directory and loading the default page located in the `pages/01.blue/02.water/item.md` directory from `pages/01.blue/01.sky/item.md`. The file, `item.md`, has no assigned slug, so Grav uses the directory name.
 
 ```markdown
 [link](../water)
@@ -92,7 +94,7 @@ In an absolute link, the link opens with a `/`. Here is an example of an absolut
 [link](/blue/sky)
 ```
 
-The second method is fashioned after the **Directory Relative** style detailed previously. This method leaves in elements like the ordering numbers at the beginning of directory names. While this does add the potential of a broken link when content is reordered, it is more reliable when used with services like [Github](http://github.com) where content links do not have the benefit of Grav's flexibility. Here is an example of an absolute link made to `pages/01.blue/01.sky/item.md` using this style.
+The second method is fashioned after the **Directory Relative** style detailed previously. This method leaves in elements like the ordering numbers at the beginning of directory names. While this does add the potential of a broken link when content is reordered, it is more reliable when used with services like [Github](https://github.com) where content links do not have the benefit of Grav's flexibility. Here is an example of an absolute link made to `pages/01.blue/01.sky/item.md` using this style.
 
 ```markdown
 [link](/01.blue/01.sky)

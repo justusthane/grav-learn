@@ -53,12 +53,13 @@ Because Grav's content is primarily based in markdown, the editing shortcuts aut
 
 Here is a breakdown of the tools found in the content editor:
 
+[div class="table table-striped table-keycol"]
 | Tool                                      | Description                                       |
 | :-----                                    | :-----                                            |
 | <i class="fa fa-fw fa-bold"></i>          | Adds **Bold** tags to your content.               |
 | <i class="fa fa-fw fa-italic"></i>        | Adds *Italic* tags to your content.               |
 | <i class="fa fa-fw fa-strikethrough"></i> | Adds ~~Strikethrough~~ tags to your content.      |
-| <i class="fa fa-fw fa-link"></i>          | Adds [links](http://getgrav.org) to your content. |
+| <i class="fa fa-fw fa-link"></i>          | Adds [links](https://getgrav.org) to your content. |
 | <i class="fa fa-fw fa-picture-o"></i>     | Adds media to your content.                       |
 | <i class="fa fa-fw fa-quote-right"></i>   | Adds quote tags to your content.                  |
 | <i class="fa fa-fw fa-list-ul"></i>       | Creates an unordered list.                        |
@@ -66,6 +67,7 @@ Here is a breakdown of the tools found in the content editor:
 | <i class="fa fa-fw fa-code"></i>          | Activates the edit view.                          |
 | <i class="fa fa-fw fa-eye"></i>           | Activates the content preview.                    |
 | <i class="fa fa-fw fa-expand"></i>        | Toggles to a full-page edit or preview view.      |
+[/div]
 
 ### Page Media
 

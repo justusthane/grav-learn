@@ -10,19 +10,19 @@ The name **Grav** is just a shortened version of the word **Gravity**. The share
 
 The underlying architecture of Grav is built using well established and _best-in-class_ technologies. This is to ensure that Grav is simple to use and easy to extend. Some of these key technologies include:
 
-* [Twig Templating](http://twig.sensiolabs.org/): for powerful control of the user interface
-* [Markdown](http://en.wikipedia.org/wiki/Markdown): for easy content creation
-* [YAML](http://yaml.org): for simple configuration
-* [Parsedown](http://parsedown.org/): for fast Markdown and Markdown Extra support
-* [Doctrine Cache](http://docs.doctrine-project.org/en/latest/reference/caching.html): for performance
-* [Pimple Dependency Injection Container](http://pimple.sensiolabs.org/): for extensibility and maintainability
-* [Symfony Event Dispatcher](http://symfony.com/doc/current/components/event_dispatcher/introduction.html): for plugin event handling
-* [Symfony Console](http://symfony.com/doc/current/components/console/introduction.html): for CLI interface
+* [Twig Templating](https://twig.symfony.com/): for powerful control of the user interface
+* [Markdown](https://en.wikipedia.org/wiki/Markdown): for easy content creation
+* [YAML](https://yaml.org): for simple configuration
+* [Parsedown](https://parsedown.org/): for fast Markdown and Markdown Extra support
+* [Doctrine Cache](https://www.doctrine-project.org/projects/doctrine-orm/en/2.6/reference/caching.html): for performance
+* [Pimple Dependency Injection Container](https://pimple.symfony.com/): for extensibility and maintainability
+* [Symfony Event Dispatcher](https://symfony.com/doc/current/components/event_dispatcher.html): for plugin event handling
+* [Symfony Console](https://symfony.com/doc/current/components/console.html): for CLI interface
 * [Gregwar Image Library](https://github.com/Gregwar/Image): for dynamic image manipulation
 
 ## Grav's Place in the Universe
 
-There are many powerful open source CMS solutions for building complex websites.  Some of the more commonly used ones are [Joomla](http://joomla.org), [WordPress](http://wordpress.org), and [Drupal](http://drupal.org). The downside of these platforms is that they have a steep learning curve associated with them. This requires a significant amount of your time - and this may be the time that you do not have.
+There are many powerful open source CMS solutions for building complex websites.  Some of the more commonly used ones are [Joomla](https://joomla.org), [WordPress](https://wordpress.org), and [Drupal](https://drupal.org). The downside of these platforms is that they have a steep learning curve associated with them. This requires a significant amount of your time - and this may be the time that you do not have.
 
 These platforms provide a wealth of features and functionality that you can extend with a wide variety of open source and proprietary plug-ins and themes.  These extensions and themes are themselves often feature-packed, requiring more knowledge and time on the part of the developer yet.
 
@@ -34,8 +34,8 @@ This solution allows simple plugins to quickly and easily add powerful functiona
 
 To get a basic site up-and-running requires minimal Web development experience. If you dig a little deeper, you will discover that there is very little Grav cannot accomplish.
 
-##### Grav Logos and Press Information
+### Grav Logos and Press Information
 
-You can find a summary about Grav, including **Grav logos** and **press information**, on our [media page](http://getgrav.org/media).
+You can find a summary about Grav, including **Grav logos** and **press information**, on our [media page](https://getgrav.org/media).
 
-!!! The simplest way to navigate the documentation is to use the **Next** and **Previous** arrows (<i class="fa fa-chevron-left"></i> <i class="fa fa-chevron-right"></i>) on each page. You can see your progress represented by the check marks (<i class="fa fa-check"></i>) in the sidebar.
+!!! The simplest way to navigate the documentation is to use the **Previous** and **Next** arrows (<i class="fa fa-angle-left"></i> | <i class="fa fa-angle-right"></i>) at the top of each page. You can see your progress represented by the check marks (<i class="fa fa-check-circle"></i>) in the sidebar.

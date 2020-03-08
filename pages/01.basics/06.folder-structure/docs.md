@@ -6,8 +6,9 @@ taxonomy:
 
 Because Grav is a **flat-file based CMS**, meaning no database underpins it, the folder structure of your site is very important.  At the **top level** of your Grav installation the folder structure looks like:
 
-```bash
+[prism classes="language-bash line-numbers"]
 /assets
+/backup
 /bin
 /cache
 /images
@@ -15,19 +16,23 @@ Because Grav is a **flat-file based CMS**, meaning no database underpins it, the
 /system
 /user
 /vendor
-```
+[/prism]
 
 So let us dig a little deeper into each of these top-level folders and explain what they are for:
 
 ### /assets
 
-**(v0.9.0+)** The `assets` folder is used by the new asset management system within Grav to store processed `.css` and `.js` files.
+The `assets` folder is used by the new asset management system within Grav to store processed `.css` and `.js` files.
 
 !! This folder should not be used to store any user data, as it is routinely flushed of all data.
 
 ### /bin
 
-The `bin` folder contains the [Grav CLI application](../../advanced/grav-cli) that can be used to perform some handy tasks from the command line.  This is a relatively advanced feature primarily intended for developers so we'll set this topic aside for later discussion.
+The `bin` folder contains the [Grav CLI application](../grav-cli) that can be used to perform some handy tasks from the command line.  This is a relatively advanced feature primarily intended for developers so we'll set this topic aside for later discussion.
+
+### /backup
+
+The `backup` folder is the default location for Grav backups.
 
 ### /cache
 
@@ -63,18 +68,25 @@ The `vendor` folder contains important libraries that Grav relies on.  This fold
 
 This is the most important folder for the majority of Grav users. This folder is where you will spend your time creating content, using plugins and editing your themes. Let us burrow a little further into this folder:
 
-```bash
+[prism classes="language-bash line-numbers"]
 /user/accounts
+/user/blueprints
 /user/config
 /user/data
+/user/images
+/user/languages
 /user/pages
 /user/plugins
 /user/themes
-```
+[/prism]
 
 ### /user/accounts
 
 The `accounts` folder is where you will define user accounts if access restrictions are required to certain portions of your site.
+
+### /user/blueprints
+
+The `blueprints` folder contains your custom blueprints for the site.
 
 ### /user/config
 
@@ -86,9 +98,18 @@ The `data` folder can be used by plugins to store data that you can reference la
 
 !! This folder is not accessible via a browser by default.
 
+### /user/images
+
+The `images` folder can be used for storing your images. It can be accessed by using `image://` stream. 
+
+
+### /user/languages
+
+The `languages` folder contains [Translation Overrides](../../content/multi-language#translation-overrides). 
+
 ### /user/pages
 
-This is the heart of Grav. The `pages` folder is where you create and edit your content.  We will go into much more depth in the [next section](../../content).
+This is the heart of Grav. The `pages` folder is where you create and edit your content.  We will go into much more depth in the [next chapter](../../content).
 
 ### /user/plugins
 
@@ -96,4 +117,4 @@ A plugin can extend the fast core of Grav with particular features you may need 
 
 ### /user/themes
 
-A theme turns your content into a true website.  It converts the content you have constructed into the HTML that a browser understands and displays to your audience.  There is a base theme that is provided with Grav, but you can also download others from [GetGrav.org/downloads/themes](https://getgrav.org/downloads/themes) or even create your own.  The [Themes](../../themes) section will outline this in further detail.
+A theme turns your content into a true website.  It converts the content you have constructed into the HTML that a browser understands and displays to your audience.  There is a base theme that is provided with Grav, but you can also download others from [GetGrav.org/downloads/themes](https://getgrav.org/downloads/themes) or even create your own.  The [Themes](../../themes) chapter will outline this in further detail.
